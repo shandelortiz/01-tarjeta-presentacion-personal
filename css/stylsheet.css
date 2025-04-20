@@ -1,0 +1,95 @@
+/* Reset basico para mantener consistencia */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tarjeta principal */
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Imagena personal */
+.profile-pic {
+    width: 100px;
+    /* height: 100px; */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Enlaces de contacto */
+.social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Boton para cambiar a modo oscuro */
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* 
+    MODO OSCURO
+*/
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .card {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode button {
+    background-color: black;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode button:hover {
+    background-color: #ccc;
+}
+
+body.dark-mode .social-links a {
+    color: #66ccff;
+}
